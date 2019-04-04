@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.xcp.framework">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,19 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".okhttp.OkhttpActivity">
+        <activity android:name=".rxjava.self.RxSelfActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".eventbus.MainActivity">
-        </activity>
-        <activity android:name=".eventbus.SecondActivity" />
-        <activity android:name="com.xcp.framework.architect_day25.FFActivity" >
+        <activity android:name=".rxjava.Rx2Activity">
 
         </activity>
+        <activity android:name=".rxjava.RxActivity"></activity>
+        <activity android:name=".okhttp.OkhttpActivity" />
+        <activity android:name=".eventbus.MainActivity" />
+        <activity android:name=".eventbus.SecondActivity" />
+        <activity android:name=".architect_day25.FFActivity" />
     </application>
 
 </manifest>
